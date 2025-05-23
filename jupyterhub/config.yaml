@@ -1,0 +1,17 @@
+proxy:
+  secretToken: "a9784a3981998d53bd1c38528212581985accf054dc82e1f7c989eade11e616d"
+
+hub:
+  config:
+    JupyterHub:
+      admin_users:
+        - your-username
+
+singleuser:
+  image:
+    name: jupyter/scipy-notebook
+    tag: latest
+  storage:
+    capacity: 10Gi
+    dynamic:
+      storageClass: standard
